@@ -1,0 +1,6 @@
+|lab0_vhdl
+KEY[0] => LEDG.IN0
+KEY[1] => LEDG.IN1
+LEDG[2] <= LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+
