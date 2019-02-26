@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE IEEE.std_logic_arith.all;
+USE ieee.std_logic_unsigned.all;
+ENTITY driver4display IS
+ PORT( number : IN std_logic_vector (15 downto 0);
+ HEX0 : OUT std_logic_vector(6 downto 0);
+ HEX1 : OUT std_logic_vector(6 downto 0);
+ HEX2 : OUT std_logic_vector(6 downto 0);
+ HEX3 : OUT std_logic_vector(6 downto 0));
+END driver4display;
+
+ARCHITECTURE Structure OF driver4display IS
+BEGIN
+	
+END Structure; 

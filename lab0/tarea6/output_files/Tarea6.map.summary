@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 18 11:41:44 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Tarea6
+Top-level Entity Name : Tarea6
+Family : Cyclone II
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

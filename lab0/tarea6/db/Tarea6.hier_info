@@ -1,0 +1,144 @@
+|Tarea6
+KEY[0] => count[0].CLK
+KEY[0] => count[1].CLK
+KEY[0] => count[2].CLK
+SW[0] => count.OUTPUTSELECT
+SW[0] => count.OUTPUTSELECT
+SW[0] => count.OUTPUTSELECT
+HEX0[0] <= driver7Segmentos:h0.bitsCaracter[0]
+HEX0[1] <= driver7Segmentos:h0.bitsCaracter[1]
+HEX0[2] <= driver7Segmentos:h0.bitsCaracter[2]
+HEX0[3] <= driver7Segmentos:h0.bitsCaracter[3]
+HEX0[4] <= driver7Segmentos:h0.bitsCaracter[4]
+HEX0[5] <= driver7Segmentos:h0.bitsCaracter[5]
+HEX0[6] <= driver7Segmentos:h0.bitsCaracter[6]
+HEX1[0] <= driver7Segmentos:h1.bitsCaracter[0]
+HEX1[1] <= driver7Segmentos:h1.bitsCaracter[1]
+HEX1[2] <= driver7Segmentos:h1.bitsCaracter[2]
+HEX1[3] <= driver7Segmentos:h1.bitsCaracter[3]
+HEX1[4] <= driver7Segmentos:h1.bitsCaracter[4]
+HEX1[5] <= driver7Segmentos:h1.bitsCaracter[5]
+HEX1[6] <= driver7Segmentos:h1.bitsCaracter[6]
+HEX2[0] <= driver7Segmentos:h2.bitsCaracter[0]
+HEX2[1] <= driver7Segmentos:h2.bitsCaracter[1]
+HEX2[2] <= driver7Segmentos:h2.bitsCaracter[2]
+HEX2[3] <= driver7Segmentos:h2.bitsCaracter[3]
+HEX2[4] <= driver7Segmentos:h2.bitsCaracter[4]
+HEX2[5] <= driver7Segmentos:h2.bitsCaracter[5]
+HEX2[6] <= driver7Segmentos:h2.bitsCaracter[6]
+HEX3[0] <= driver7Segmentos:h3.bitsCaracter[0]
+HEX3[1] <= driver7Segmentos:h3.bitsCaracter[1]
+HEX3[2] <= driver7Segmentos:h3.bitsCaracter[2]
+HEX3[3] <= driver7Segmentos:h3.bitsCaracter[3]
+HEX3[4] <= driver7Segmentos:h3.bitsCaracter[4]
+HEX3[5] <= driver7Segmentos:h3.bitsCaracter[5]
+HEX3[6] <= driver7Segmentos:h3.bitsCaracter[6]
+LEDR[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea6|driver7Segmentos:h0
+codigoCaracter[0] => Mux0.IN10
+codigoCaracter[0] => Mux1.IN10
+codigoCaracter[0] => Mux2.IN10
+codigoCaracter[0] => Mux3.IN10
+codigoCaracter[0] => Mux4.IN5
+codigoCaracter[1] => Mux0.IN9
+codigoCaracter[1] => Mux1.IN9
+codigoCaracter[1] => Mux2.IN9
+codigoCaracter[1] => Mux3.IN9
+codigoCaracter[2] => Mux0.IN8
+codigoCaracter[2] => Mux1.IN8
+codigoCaracter[2] => Mux2.IN8
+codigoCaracter[2] => Mux3.IN8
+codigoCaracter[2] => Mux4.IN4
+codigoCaracter[2] => bitsCaracter[5].DATAIN
+codigoCaracter[2] => bitsCaracter[4].DATAIN
+bitsCaracter[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[4] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[5] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea6|driver7Segmentos:h1
+codigoCaracter[0] => Mux0.IN10
+codigoCaracter[0] => Mux1.IN10
+codigoCaracter[0] => Mux2.IN10
+codigoCaracter[0] => Mux3.IN10
+codigoCaracter[0] => Mux4.IN5
+codigoCaracter[1] => Mux0.IN9
+codigoCaracter[1] => Mux1.IN9
+codigoCaracter[1] => Mux2.IN9
+codigoCaracter[1] => Mux3.IN9
+codigoCaracter[2] => Mux0.IN8
+codigoCaracter[2] => Mux1.IN8
+codigoCaracter[2] => Mux2.IN8
+codigoCaracter[2] => Mux3.IN8
+codigoCaracter[2] => Mux4.IN4
+codigoCaracter[2] => bitsCaracter[5].DATAIN
+codigoCaracter[2] => bitsCaracter[4].DATAIN
+bitsCaracter[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[4] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[5] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea6|driver7Segmentos:h2
+codigoCaracter[0] => Mux0.IN10
+codigoCaracter[0] => Mux1.IN10
+codigoCaracter[0] => Mux2.IN10
+codigoCaracter[0] => Mux3.IN10
+codigoCaracter[0] => Mux4.IN5
+codigoCaracter[1] => Mux0.IN9
+codigoCaracter[1] => Mux1.IN9
+codigoCaracter[1] => Mux2.IN9
+codigoCaracter[1] => Mux3.IN9
+codigoCaracter[2] => Mux0.IN8
+codigoCaracter[2] => Mux1.IN8
+codigoCaracter[2] => Mux2.IN8
+codigoCaracter[2] => Mux3.IN8
+codigoCaracter[2] => Mux4.IN4
+codigoCaracter[2] => bitsCaracter[5].DATAIN
+codigoCaracter[2] => bitsCaracter[4].DATAIN
+bitsCaracter[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[4] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[5] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea6|driver7Segmentos:h3
+codigoCaracter[0] => Mux0.IN10
+codigoCaracter[0] => Mux1.IN10
+codigoCaracter[0] => Mux2.IN10
+codigoCaracter[0] => Mux3.IN10
+codigoCaracter[0] => Mux4.IN5
+codigoCaracter[1] => Mux0.IN9
+codigoCaracter[1] => Mux1.IN9
+codigoCaracter[1] => Mux2.IN9
+codigoCaracter[1] => Mux3.IN9
+codigoCaracter[2] => Mux0.IN8
+codigoCaracter[2] => Mux1.IN8
+codigoCaracter[2] => Mux2.IN8
+codigoCaracter[2] => Mux3.IN8
+codigoCaracter[2] => Mux4.IN4
+codigoCaracter[2] => bitsCaracter[5].DATAIN
+codigoCaracter[2] => bitsCaracter[4].DATAIN
+bitsCaracter[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[4] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[5] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

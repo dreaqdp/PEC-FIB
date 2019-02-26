@@ -1,0 +1,71 @@
+|Tarea5
+SW[0] => Mux4:Multiplexor.Bus0[0]
+SW[1] => Mux4:Multiplexor.Bus0[1]
+SW[2] => Mux4:Multiplexor.Bus0[2]
+SW[3] => Mux4:Multiplexor.Bus1[0]
+SW[4] => Mux4:Multiplexor.Bus1[1]
+SW[5] => Mux4:Multiplexor.Bus1[2]
+SW[6] => Mux4:Multiplexor.Bus2[0]
+SW[7] => Mux4:Multiplexor.Bus2[1]
+SW[8] => Mux4:Multiplexor.Bus2[2]
+KEY[0] => Mux4:Multiplexor.Control[0]
+KEY[1] => Mux4:Multiplexor.Control[1]
+HEX0[0] <= driver7Segmentos:Visor.bitsCaracter[0]
+HEX0[1] <= driver7Segmentos:Visor.bitsCaracter[1]
+HEX0[2] <= driver7Segmentos:Visor.bitsCaracter[2]
+HEX0[3] <= driver7Segmentos:Visor.bitsCaracter[3]
+HEX0[4] <= driver7Segmentos:Visor.bitsCaracter[4]
+HEX0[5] <= driver7Segmentos:Visor.bitsCaracter[5]
+HEX0[6] <= driver7Segmentos:Visor.bitsCaracter[6]
+
+
+|Tarea5|Mux4:Multiplexor
+Control[0] => Mux0.IN1
+Control[0] => Mux1.IN1
+Control[0] => Mux2.IN1
+Control[1] => Mux0.IN0
+Control[1] => Mux1.IN0
+Control[1] => Mux2.IN0
+Bus0[0] => Mux2.IN2
+Bus0[1] => Mux1.IN2
+Bus0[2] => Mux0.IN2
+Bus1[0] => Mux2.IN3
+Bus1[1] => Mux1.IN3
+Bus1[2] => Mux0.IN3
+Bus2[0] => Mux2.IN4
+Bus2[1] => Mux1.IN4
+Bus2[2] => Mux0.IN4
+Bus3[0] => Mux2.IN5
+Bus3[1] => Mux1.IN5
+Bus3[2] => Mux0.IN5
+Salida[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Salida[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Salida[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea5|driver7Segmentos:Visor
+codigoCaracter[0] => Mux0.IN10
+codigoCaracter[0] => Mux1.IN10
+codigoCaracter[0] => Mux2.IN10
+codigoCaracter[0] => Mux3.IN10
+codigoCaracter[0] => Mux4.IN5
+codigoCaracter[1] => Mux0.IN9
+codigoCaracter[1] => Mux1.IN9
+codigoCaracter[1] => Mux2.IN9
+codigoCaracter[1] => Mux3.IN9
+codigoCaracter[2] => Mux0.IN8
+codigoCaracter[2] => Mux1.IN8
+codigoCaracter[2] => Mux2.IN8
+codigoCaracter[2] => Mux3.IN8
+codigoCaracter[2] => Mux4.IN4
+codigoCaracter[2] => bitsCaracter[5].DATAIN
+codigoCaracter[2] => bitsCaracter[4].DATAIN
+bitsCaracter[0] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[1] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[2] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[4] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[5] <= codigoCaracter[2].DB_MAX_OUTPUT_PORT_TYPE
+bitsCaracter[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
